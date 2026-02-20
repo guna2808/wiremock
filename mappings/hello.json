@@ -1,0 +1,15 @@
+{
+    "request": {
+        "method": "GET",
+        "url": "/hello"
+    },
+    "response": {
+        "status": "500",
+        "body": "Hello Guna, WireMock is working with 5 seconds delay",
+        "fixedDelayMilliseconds": 5000,
+        "headers": {
+            "Content-Type": "text/plain"
+        }
+        
+    }
+}

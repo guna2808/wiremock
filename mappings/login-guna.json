@@ -1,0 +1,22 @@
+{
+ "priority": 1,
+ "request": {
+   "method": "POST",
+   "url": "/login",
+   "bodyPatterns": [
+     {
+       "matchesJsonPath": "$[?(@.username == 'guna')]"
+     }
+   ]
+ },
+ "response": {
+   "status": 200,
+   "jsonBody": {
+     "message": "Welcome Guna!",
+     "role": "USER"
+   },
+   "headers": {
+     "Content-Type": "application/json"
+   }
+ }
+}
