@@ -1,0 +1,12 @@
+{
+    "request": {
+        "method": "POST",
+        "url": "/dynamiclogin"
+    },
+    "response": {
+        "status": 200,
+        "body": "Hello {{jsonPath request.body '$.username'}}!",
+        "transformers": ["response-template"]
+        
+    }
+}

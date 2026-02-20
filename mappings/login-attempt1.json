@@ -1,0 +1,15 @@
+{
+    "scenarioName": "LoginScenario",
+    "requiredScenarioState": "Started",
+    "newScenarioState": "SecondAttempt",
+    "request": {
+        "method": "POST",
+        "url": "/loginattempt1"
+    },
+    "response": {
+        "status": 401,
+        "jsonBody": {
+            "error": "Invalid Password"
+        }
+    }
+}

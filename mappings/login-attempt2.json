@@ -1,0 +1,14 @@
+{
+    "scenarioName": "LoginScenario",
+    "requiredScenarioState": "SecondAttempt",
+    "request": {
+        "method": "POST",
+        "url": "/loginattempt2"
+    },
+    "response": {
+        "status": 403,
+        "jsonBody": {
+            "error": "Account Locked"
+        }
+    }
+}
